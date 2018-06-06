@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="d1">8.00dp</dimen>
+	<dimen name="d2">16.00dp</dimen>
+	<dimen name="d3">24.00dp</dimen>
+	<dimen name="d4">32.00dp</dimen>
+	<dimen name="d5">40.00dp</dimen>
+	<dimen name="d6">48.00dp</dimen>
+	<dimen name="d7">56.00dp</dimen>
+	<dimen name="d8">64.00dp</dimen>
+
+	<dimen name="s14">14.00sp</dimen>
+	<dimen name="s16">16.00sp</dimen>
+	<dimen name="s20">20.00sp</dimen>
+
+</resources>

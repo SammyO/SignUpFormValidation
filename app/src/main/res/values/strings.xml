@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">SignUpFormValidation</string>
+	<string name="signup_title">Sign Up</string>
+	<string name="signup_email_hint">Email Address</string>
+	<string name="signup_password_hint">Password</string>
+	<string name="signup_password_description">Password must contain at least 1 number and be a minimum of 8 characters long.</string>
+	<string name="signup_continue">Continue</string>
+</resources>

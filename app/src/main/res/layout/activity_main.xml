@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:windowSoftInputMode="adjustResize">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?actionBarSize"
+		android:background="@color/red">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:text="@string/signup_title"
+			android:textColor="@color/white"
+			android:textSize="@dimen/s20"/>
+
+	</android.support.v7.widget.Toolbar>
+
+	<com.oddhov.signupformvalidation.tools.view.EmailValidationEditText
+		android:id="@+id/emailAddress"
+		style="@style/SignupEditText"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/d6"
+		android:layout_marginTop="@dimen/d3"
+		android:layout_marginStart="@dimen/d2"
+		android:layout_marginEnd="@dimen/d2"
+		android:hint="@string/signup_email_hint"
+		app:layout_constraintTop_toBottomOf="@+id/toolbar"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/password_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/d1"
+		android:layout_marginStart="@dimen/d2"
+		android:layout_marginEnd="@dimen/d2"
+		app:passwordToggleEnabled="true"
+		app:passwordToggleTint="@drawable/password_toggle_color"
+		app:hintAnimationEnabled="false"
+		app:hintEnabled="false"
+		app:layout_constraintTop_toBottomOf="@+id/emailAddress"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent">
+
+		<com.oddhov.signupformvalidation.tools.view.PasswordValidationTextInputEditText
+			android:id="@+id/password"
+			style="@style/SignupEditText.Password"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/d6"
+			android:hint="@string/signup_password_hint"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<TextView
+		android:id="@+id/passwordDescription"
+		style="@style/Description"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/d1"
+		android:layout_marginStart="@dimen/d2"
+		android:layout_marginEnd="@dimen/d2"
+		android:textSize="@dimen/s14"
+		android:text="@string/signup_password_description"
+		app:layout_constraintTop_toBottomOf="@+id/password_container"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<Button
+		android:id="@+id/continueButton"
+		style="@style/PrimaryButton"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="@dimen/d2"
+		android:layout_marginStart="@dimen/d2"
+		android:layout_marginEnd="@dimen/d2"
+		android:text="@string/signup_continue"
+		app:layout_constraintTop_toBottomOf="@+id/passwordDescription"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Region Buttons -->
+	<style name="PrimaryButton" parent="Widget.AppCompat.Button.Borderless">
+		<item name="fontPath">"fonts/Roboto-Medium.ttf"</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">@dimen/s14</item>
+		<item name="android:foreground">?attr/selectableItemBackground</item>
+		<item name="android:textAllCaps">false</item>
+		<item name="android:background">@drawable/bg_selector_positive_button</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="SecondaryButton" parent="Widget.AppCompat.Button.Borderless">
+		<item name="fontPath">"fonts/Roboto-Regular.ttf"</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">@dimen/s14</item>
+		<item name="android:foreground">?attr/selectableItemBackground</item>
+		<item name="android:textAllCaps">false</item>
+		<item name="android:background">@drawable/bg_negative_button</item>`
+		<item name="android:textColor">@color/red</item>
+	</style>
+
+	<!-- Region TextViews -->
+	<style name="Description">
+		<item name="fontPath">"fonts/Roboto-Regular.ttf"</item>
+		<item name="android:textSize">@dimen/s14</item>
+	</style>
+
+	<!-- Region EditTexts -->
+	<style name="SignupEditText" parent="Widget.AppCompat.EditText">
+		<item name="colorControlNormal">@color/transparent</item>
+		<item name="colorControlActivated">@color/transparent</item>
+		<item name="colorControlHighlight">@color/transparent</item>
+		<item name="android:paddingLeft">@dimen/d2</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textColorHint">@color/light_grey</item>
+		<item name="android:textSize">@dimen/s16</item>
+		<item name="android:inputType">textEmailAddress|textNoSuggestions</item>
+		<item name="android:textColor">@drawable/textcolor_edittext</item>
+		<item name="android:background">@drawable/bg_edittext</item>
+	</style>
+
+	<style name="SignupEditText.Password" parent="SignupEditText">
+		<item name="android:inputType">text|textPassword</item>
+	</style>
+</resources>

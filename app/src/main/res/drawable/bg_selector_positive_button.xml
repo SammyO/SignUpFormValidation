@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@drawable/bg_round_silver_dark" android:state_enabled="false" />
+	<item android:drawable="@drawable/bg_round_red"/>
+</selector>
